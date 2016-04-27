@@ -1,0 +1,13 @@
+1 = Yang mendaftarkan
+
+------------------------------------------------
+
+2a = Identitas Siswa
+2b = Kelahiran Anak
+2c = Kesehatan Anak
+2d = Saudara Kandung
+2e = Ciri Khas Anak
+
+-------------------------------------------------
+
+3 = Data Keluarga

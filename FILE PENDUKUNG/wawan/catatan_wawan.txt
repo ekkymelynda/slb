@@ -1,0 +1,7 @@
+- Jika ingin mengisi jurnal materi.
+Yang harus sudah ada : 
+1. MAPEL_ID (mata_pelajaran)
+2. GR_ID (GURU)
+UNTUK INSERT :
+INSERT INTO `slb`.`jurnal_materi` (`JM_ID`, `MAPEL_ID`, `GR_ID`, `JM_THNAJARAN`, `JM_SEMESTER`) VALUES ('1', '1', '1', '2015/2016', '1');
+

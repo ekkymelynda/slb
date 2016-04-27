@@ -1,0 +1,11 @@
+0. Data pendukung ada di dalam folder "Data Pendukung"
+1. Database ada di folder "Database SQL" beserta file dummy nya ( Saya memakai MySQL Workbench ).
+Nama database saya slb, monggo disamakan
+2. Untuk access data -> 10.151.34.78/slb
+3. Untuk masuk ke phpmyadmin, 10.151.34.78/phpmyadmin
+   Username : root
+   Password : ardi.nusawan123321
+4. Untuk mengakses code, bisa di \\10.151.34.78\project
+   Username : ardi
+   Password : 12344321
+5. Untuk Controller maupun model, tolong nama class dan nama file controller/model disamakan besar maupun kecilnya. Karena saya memakai linux SANGAT CASE SENSITIF

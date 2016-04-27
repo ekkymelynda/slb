@@ -1,0 +1,51 @@
+
+<?php
+if (empty($hasil)) {
+ echo "Tidak ada data siswa";
+}
+else {
+?>
+<h3> Daftar siswa </h3>
+<?php echo anchor('Con_pendaftar/tambahpendaftar', '+ Tambah Data'); ?>
+<table>
+<tr bgcolor="FF8844">
+ <th> No. </th>
+ <th> Nama </th>
+ <th> JK </th>
+ <th> NIS </th>
+ <th> NISN </th>
+ <th> Rombel </th>
+ <th> Tempat Lahir </th>
+ <th> Tanggal Lahir </th>
+ <th> NIK </th>
+ <th> Agama </th>
+</tr>
+<?php
+$no = 1;
+foreach ($hasil as $data):
+?>
+<tr>
+ <td> <?php echo $data->SW_ID; ?> </td>
+ <td> <?php echo $data->SW_NAMA; ?> </td>
+ <td> <?php echo $data->SW_JK; ?> </td>
+ <td> <?php echo $data->NIS; ?> </td>
+ <td> <?php echo $data->NISN; ?> </td>
+ <!--<td> <?php echo $data->RM_KELAS; ?> </td>-->
+ <td></td>
+ <td> <?php echo $data->SW_TEMPATLAHIR; ?> </td>
+ <td> <?php echo $data->SW_TGLLAHIR; ?> </td>
+ <td> <?php echo $data->NIK; ?> </td>
+ <!--<td> <?php echo $data->AG_NAMA; ?> </td>-->
+ <td></td>
+  <td> <a href="Con_pendaftar/updatedata/<?php echo $data->SW_ID; ?>"> Ubah </a> | <a href="Con_pendaftar/hapusdata/<?php echo $data->SW_ID; ?>"> Hapus </a> </td>
+</tr>
+<?php
+$no++;
+endforeach;
+?>
+</table>
+<?php
+}
+
+?>
+

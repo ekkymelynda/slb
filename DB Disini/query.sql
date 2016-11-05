@@ -74,5 +74,10 @@ SELECT R.`RM_BC` AS A, R.`RM_KELAS` AS B, SUM(S.`SW_JK` = "L") AS L, SUM(S.`SW_J
 FROM `rombel` R, `guru` G, `detil_rombel_siswa` D, `siswa` S
 WHERE D.`RM_ID` = R.`RM_ID` AND D.`SW_ID` = S.`SW_ID` AND R.`GR_ID` = G.`GR_ID`;
 
+SELECT R.`RM_KELAS`
+FROM `rombel` R, `detil_rombel_siswa` Q, `siswa` S
+WHERE R.`RM_ID` = Q.`RM_ID` AND Q.`SW_ID` = S.`SW_ID`;
+
 SELECT *
-FROM `rombel` R
+FROM `siswa` S, `detil_rombel_siswa` D
+WHERE S.`SW_ID` = D.`SW_ID`;

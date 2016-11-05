@@ -29,7 +29,7 @@
                             <th>JK</th>
                             <th>NIS</th>
                             <th>NISN</th>
-                            <th>Detail</th>
+                            <!--<th>Detail</th>-->
                         </thead>
                         <tbody>
                             <?php foreach ($h->result() as $row){?>
@@ -39,7 +39,7 @@
                                 <td class="text-left"><?php echo $row->SW_JK ?></td>
                                 <td class="text-left"><?php echo $row->NIS ?></td>
                                 <td class="text-left"><?php echo $row->NISN ?></td>
-                                <td class="text-left"><a class="btn btn-info btn-xs" href="<?php echo base_url(); ?>Detail_Laporan/data_peserta_didik/<?php echo $row->SW_ID;?>"><span class="glyphicon glyphicon-remove"></span> Detail</a></td>
+                                <!--<td class="text-left"><a class="btn btn-info btn-xs" href="<?php echo base_url(); ?>Detail_Laporan/data_peserta_didik/<?php echo $row->SW_ID;?>"><span class="glyphicon glyphicon-remove"></span> Detail</a></td>-->
                             </tr>
                             <?php }?>
                         </tbody>

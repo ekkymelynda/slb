@@ -53,7 +53,6 @@ class Laporan extends CI_Controller {
 	}
 
 	public function data_rombongan_belajar() {
-		$data['h'] = $this->laporan_model->laporan_data_rombongan_belajar();
 		$this->load->view('header')->view('laporan/read/data_rombongan_belajar')->view('footer');
 	}
 

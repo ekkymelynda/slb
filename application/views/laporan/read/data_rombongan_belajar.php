@@ -18,16 +18,14 @@
                             <th>Wali Kelas</th>
                         </thead>
                         <tbody>
-                            <?php foreach ($h->result() as $row){?>
                             </tr>
-                                <td class="text-left"><?php echo $row->A ?></td>
-                                <td class="text-left"><?php echo $row->B ?></td>
-                                <td class="text-left"><?php echo $row->L ?></td>
-                                <td class="text-left"><?php echo $row->P ?></td>
-                                <td class="text-left"><?php echo $row->J ?></td>
-                                <td class="text-left"><?php echo $row->C ?></td>
+                                <td class="text-left"></td>
+                                <td class="text-left"></td>
+                                <td class="text-left"></td>
+                                <td class="text-left"></td>
+                                <td class="text-left"></td>
+                                <td class="text-left"></td>
                             </tr>
-                            <?php }?>
                         </tbody>
                     </table>
                 </div>

@@ -10,7 +10,6 @@
                 <div class="table-responsive">
                     <table id="mytable" class="table table-hover">
                         <thead>
-                            <th>No</th>
                             <th>Nama Rombel</th>
                             <th>Kelas</th>
                             <th>Laki-Laki</th>
@@ -19,15 +18,16 @@
                             <th>Wali Kelas</th>
                         </thead>
                         <tbody>
+                            <?php foreach ($h->result() as $row){?>
                             </tr>
-                                <td class="text-left">1</td>
-                                <td class="text-left">Kelas 1</td>
-                                <td class="text-left">Kelas 1</td>
-                                <td class="text-left">5</td>
-                                <td class="text-left">2</td>
-                                <td class="text-left">7</td>
-                                <td class="text-left">Wiwik Moedjiati</td>
+                                <td class="text-left"><?php echo $row->A ?></td>
+                                <td class="text-left"><?php echo $row->B ?></td>
+                                <td class="text-left"><?php echo $row->L ?></td>
+                                <td class="text-left"><?php echo $row->P ?></td>
+                                <td class="text-left"><?php echo $row->J ?></td>
+                                <td class="text-left"><?php echo $row->C ?></td>
                             </tr>
+                            <?php }?>
                         </tbody>
                     </table>
                 </div>

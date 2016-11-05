@@ -7,8 +7,7 @@
                 <div class="center wow fadeInDown">
                     <h2>Data Peserta Didik</h2>
                 </div>
-                <!-- Split button -->
-                <div class="btn-group">
+                <!--<div class="btn-group">
                   <button type="button" class="btn btn-danger">Action</button>
                   <button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     <span class="caret"></span>
@@ -21,11 +20,11 @@
                     <li role="separator" class="divider"></li>
                     <li><a href="#">Separated link</a></li>
                   </ul>
-                </div>
+                </div>-->
                 <div class="table-responsive">
                     <table id="mytable" class="table table-hover">
                         <thead>
-                            <th>No</th>
+                            <!--<th>No</th>-->
                             <th>Nama</th>
                             <th>JK</th>
                             <th>NIS</th>
@@ -33,14 +32,16 @@
                             <th>Detail</th>
                         </thead>
                         <tbody>
+                            <?php foreach ($h->result() as $row){?>
                             </tr>
-                                <td class="text-left">1</td>
-                                <td class="text-left">Fernando</td>
-                                <td class="text-left">L</td>
-                                <td class="text-left"></td>
-                                <td class="text-left"></td>
-                                <td class="text-left"><a class="btn btn-info btn-xs" href="<?php  echo site_url('Detail_Laporan/data_peserta_didik');?>"><span class="glyphicon glyphicon-remove"></span> Detail</a></td>
+                                <!--<td class="text-left"><?php echo $row->SW_ID ?></td>-->
+                                <td class="text-left"><?php echo $row->SW_NAMA ?></td>
+                                <td class="text-left"><?php echo $row->SW_JK ?></td>
+                                <td class="text-left"><?php echo $row->NIS ?></td>
+                                <td class="text-left"><?php echo $row->NISN ?></td>
+                                <td class="text-left"><a class="btn btn-info btn-xs" href="<?php echo base_url(); ?>Detail_Laporan/data_peserta_didik/<?php echo $row->SW_ID;?>"><span class="glyphicon glyphicon-remove"></span> Detail</a></td>
                             </tr>
+                            <?php }?>
                         </tbody>
                     </table>
                 </div>

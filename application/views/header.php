@@ -53,7 +53,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                 </div>
                 <div class="collapse navbar-collapse navbar-right">
                     <ul class="nav navbar-nav">
-                        <!--<li class=""><a href="<?php echo site_url('Nav/predashboard'); ?>">Dasboard</a></li>-->
+                        <li class=""><a href="<?php echo site_url('Nav/predashboard'); ?>">Dasboard</a></li>
                         <li class=""><a href="<?php echo site_url('Nav/form'); ?>">Form</a></li>
                         <li class=""><a href="<?php echo site_url('Nav/laporan'); ?>">Laporan</a></li>
                         <!--<li class=""><a href="<?php echo site_url('Nav/grafik'); ?>">Grafik</a></li>-->

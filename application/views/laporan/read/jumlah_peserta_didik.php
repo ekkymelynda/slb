@@ -14,13 +14,14 @@
                             <th>Perempuan</th>
                             <th>Total</th>
                         </thead>
+                        <?php foreach ($h->result() as $row){?>
                         <tbody>
                             </tr>
-                                <?php echo '<td class="text-left danger">'.$siswa_laki.'</td>'; ?>
-                                <?php echo '<td class="text-left danger">'.$siswa_perempuan.'</td>'; ?>
-                                <?php $total = $siswa_laki + $siswa_perempuan; ?>
-                                <?php echo '<td class="text-left danger">'.$total.'</td>'; ?>
+                                <td class="text-left danger"><?php echo $row->L ?></td>
+                                <td class="text-left danger"><?php echo $row->P ?></td>
+                                <td class="text-left danger"><?php echo $row->T ?></td>
                             </tr>
+                            <?php }?>
                         </tbody>
                     </table>
                 </div>

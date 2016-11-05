@@ -19,21 +19,20 @@
                             <th>Jurusan</th>
                             <th>Status</th>
                         </thead>
-                        <?php foreach ($guru as $d) {?>
+                        <?php foreach ($h->result() as $row){?>
                         <tbody>
                             </tr>
-                                <td class="text-left"><?php echo $d['GR_ID'] ?></td>
-                                <td class="text-left"><?php echo $d['GR_NIP'] ?></td>
-                                <td class="text-left"><?php echo $d['GR_NAMA'] ?></td>
-                                <td class="text-left"><?php echo $d['GR_GELAR'] ?></td>
-                                <td class="text-left"><?php echo $d['GR_TMTKERJA'] ?></td>
-                                <td class="text-left"><?php echo $d['GR_SERTIFIKASI'] ?></td>
-                                <td class="text-left"><?php echo $d['GR_JURUSAN'] ?></td>
-                                <td class="text-left"><?php echo $d['GR_KEPEGAWAIAN'] ?></td>
-                            </tr>
+                                <td class="text-left"><?php echo $row->GR_ID ?></td>
+                                <td class="text-left"><?php echo $row->GR_NIP ?></td>
+                                <td class="text-left"><?php echo $row->GR_NAMA ?></td>
+                                <td class="text-left"><?php echo $row->GR_GELAR ?></td>
+                                <td class="text-left"><?php echo $row->GR_TMTKERJA ?></td>
+                                <td class="text-left"><?php echo $row->GR_SERTIFIKASI ?></td>
+                                <td class="text-left"><?php echo $row->GR_JURUSAN ?></td>
+                                <td class="text-left"><?php echo $row->GR_KEPEGAWAIAN ?></td>
+                            </tr>                            
+                        <?php }?>
                         </tbody>
-                        <?php }
-?>
                     </table>
                 </div>
                 <div class=".col-md-3 .col-md-offset-3">

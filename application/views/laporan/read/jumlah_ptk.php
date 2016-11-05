@@ -14,12 +14,14 @@
                             <th>Perempuan</th>
                             <th>Total</th>
                         </thead>
+                        <?php foreach ($h->result() as $row){?>
                         <tbody>
                             </tr>
-                                <td class="text-left danger">3</td>
-                                <td class="text-left danger">7</td>
-                                <td class="text-left danger">10</td>
+                                <td class="text-left danger"><?php echo $row->L ?></td>
+                                <td class="text-left danger"><?php echo $row->P ?></td>
+                                <td class="text-left danger"><?php echo $row->T ?></td>
                             </tr>
+                            <?php }?>
                         </tbody>
                     </table>
                 </div>
